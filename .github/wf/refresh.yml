@@ -1,0 +1,33 @@
+name: Refresh juku addon
+
+on:
+  schedule:
+    # 每 6 小时自动重新抓取最新片单 + 真实 HLS 直链（PC 无需在线）
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dep
+        run: pip install cryptography
+      - name: Set device key
+        # device.pri 已转 base64 存于仓库 Secret JUKU_DEVICE_PRI（等同设备身份，勿泄露）
+        run: echo "JUKU_DEVICE_PRI=${{ secrets.JUKU_DEVICE_PRI }}" >> "$GITHUB_ENV"
+      - name: Build static addon
+        run: python build_site.py
+      - name: Commit
+        run: |
+          git config user.name "juku-bot"
+          git config user.email "bot@juku.local"
+          git add catalog stream manifest.json
+          git commit -m "auto refresh $(date -u +%Y-%m-%dT%H:%M:%SZ)" || echo "no changes"
+          git push
