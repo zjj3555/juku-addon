@@ -84,12 +84,12 @@ def build():
             if not vid or vid in seen:
                 continue
             seen.add(vid)
-            metas.append(meta_from_video(v))
-            # 2) 拉详情 -> 写 stream
+            # 1) 拉详情 -> 写 stream（只保留真有公开 HLS 的影片，避免列表里出现不能播的条目）
+            streams = []
+            spath = os.path.join(OUT, "stream", "movie", "juku-%s.json" % vid)
             try:
                 det = c.get_video_detail(vid)
                 pl = det.get("data", {}).get("playListByLine", {})
-                streams = []
                 used = set()
                 for line, lst in pl.items():
                     for it in (lst or []):
@@ -102,13 +102,24 @@ def build():
                             "title": "线路%s · %s" % (it.get("lineId", line), url.split("/")[2]),
                             "behaviorHints": {"notWebReady": False},
                         })
-                with open(os.path.join(OUT, "stream", "movie", "juku-%s.json" % vid), "w", encoding="utf-8") as f:
+                with open(spath, "w", encoding="utf-8") as f:
                     json.dump({"streams": streams}, f, ensure_ascii=False)
             except Exception as e:
-                print("  ! detail fail %s: %s" % (vid, e))
+                print("  ! detail fail %s: %s (keep previous if any)" % (vid, e))
+                if os.path.exists(spath):
+                    try:
+                        prev = json.load(open(spath, encoding="utf-8")).get("streams", [])
+                        if prev:
+                            streams = prev
+                    except Exception:
+                        pass
+            if streams:
+                metas.append(meta_from_video(v))
+            else:
+                print("  - skip (no HLS) %s %s" % (vid, v.get("title")))
         with open(os.path.join(OUT, "catalog", "movie", "%s.json" % cat_id), "w", encoding="utf-8") as f:
             json.dump({"metas": metas}, f, ensure_ascii=False)
-        print("catalog %s: %d metas" % (cat_id, len(metas)))
+        print("catalog %s: %d playable metas" % (cat_id, len(metas)))
 
     with open(os.path.join(OUT, "manifest.json"), "w", encoding="utf-8") as f:
         json.dump(MANIFEST, f, ensure_ascii=False, indent=2)
