@@ -1,1 +1,1 @@
-{"streams": [{"url": "https://hn.bfvvs.com/play/e73n6rre/index.m3u8", "title": "线路11 · hn.bfvvs.com", "behaviorHints": {"notWebReady": false}}, {"url": "https://v.gsuus.com/play/b82oqvLe/index.m3u8", "title": "线路12 · v.gsuus.com", "behaviorHints": {"notWebReady": false}}]}
+{"streams": [{"url": "https://hn.bfvvs.com/play/e73n6rre/index.m3u8", "title": "线路11 · hn.bfvvs.com", "behaviorHints": {"notWebReady": true}}, {"url": "https://v.gsuus.com/play/b82oqvLe/index.m3u8", "title": "线路12 · v.gsuus.com", "behaviorHints": {"notWebReady": true}}]}
