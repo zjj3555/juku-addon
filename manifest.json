@@ -1,0 +1,66 @@
+{
+  "id": "community.juku.hls",
+  "version": "2.1.0",
+  "name": "Juku 剧库 (实时)",
+  "description": "实时解析剧库 jukuku.xyz 的免登录 HLS 直链，SwitchStream / nxmp / Stremio 通用。公网托管，PC 无需常开。",
+  "types": [
+    "movie",
+    "series"
+  ],
+  "resources": [
+    {
+      "name": "catalog",
+      "types": [
+        "movie",
+        "series"
+      ],
+      "idPrefixes": [
+        "juku-"
+      ]
+    },
+    {
+      "name": "meta",
+      "types": [
+        "movie",
+        "series"
+      ],
+      "idPrefixes": [
+        "juku-"
+      ]
+    },
+    {
+      "name": "stream",
+      "types": [
+        "movie",
+        "series"
+      ],
+      "idPrefixes": [
+        "juku-"
+      ]
+    }
+  ],
+  "catalogs": [
+    {
+      "type": "movie",
+      "id": "juku-latest",
+      "name": "Juku 最新"
+    },
+    {
+      "type": "movie",
+      "id": "juku-hot",
+      "name": "Juku 热门"
+    },
+    {
+      "type": "series",
+      "id": "juku-series",
+      "name": "Juku 剧集"
+    }
+  ],
+  "idPrefixes": [
+    "juku-"
+  ],
+  "behaviorHints": {
+    "configurable": false,
+    "cinemetaFallback": false
+  }
+}
