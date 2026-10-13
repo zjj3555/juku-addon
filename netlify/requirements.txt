@@ -1,0 +1,2 @@
+# Netlify Python functions 依赖 (会与 function 目录一起打包)
+cryptography>=41.0.0
