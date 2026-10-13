@@ -1,0 +1,9 @@
+[build]
+  functions = "netlify/functions"
+
+[functions]
+  directory = "netlify/functions"
+
+# 单个函数，保持 handler 在 addon.py 的 handler(event, context)
+[functions.addon]
+  runtime = "python312"
