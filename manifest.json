@@ -4,15 +4,13 @@
   "name": "Juku 剧库 (实时)",
   "description": "实时解析剧库 jukuku.xyz 的免登录 HLS 直链，SwitchStream / nxmp / Stremio 通用。公网托管，PC 无需常开。",
   "types": [
-    "movie",
-    "series"
+    "movie"
   ],
   "resources": [
     {
       "name": "catalog",
       "types": [
-        "movie",
-        "series"
+        "movie"
       ],
       "idPrefixes": [
         "juku-"
@@ -21,8 +19,7 @@
     {
       "name": "meta",
       "types": [
-        "movie",
-        "series"
+        "movie"
       ],
       "idPrefixes": [
         "juku-"
@@ -31,8 +28,7 @@
     {
       "name": "stream",
       "types": [
-        "movie",
-        "series"
+        "movie"
       ],
       "idPrefixes": [
         "juku-"

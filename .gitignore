@@ -1,0 +1,7 @@
+# 切勿提交设备私钥 / 凭据
+device.pri
+*.pri
+*.pem
+JUKU_DEVICE_PRI*
+__pycache__/
+*.pyc
