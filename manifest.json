@@ -1,6 +1,6 @@
 {
   "id": "community.juku.hls",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "name": "Juku 剧库 (实时)",
   "description": "实时解析剧库 jukuku.xyz 的免登录 HLS 直链，SwitchStream / nxmp / Stremio 通用。公网托管，PC 无需常开。",
   "types": [
