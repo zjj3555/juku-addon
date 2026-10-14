@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1,juku-223076 · 线路11 · hn.bfvvs.com
+#EXTINF:-1 tvg-logo="https://zjj3555.github.io/juku-addon/posters/juku-223076.jpg",juku-223076 · 线路11 · hn.bfvvs.com
 https://hn.bfvvs.com/play/bkRw5nEa/index.m3u8
-#EXTINF:-1,juku-223076 · 线路12 · v.gsuus.com
+#EXTINF:-1 tvg-logo="https://zjj3555.github.io/juku-addon/posters/juku-223076.jpg",juku-223076 · 线路12 · v.gsuus.com
 https://v.gsuus.com/play/elYvOora/index.m3u8
