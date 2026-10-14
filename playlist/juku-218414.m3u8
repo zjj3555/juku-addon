@@ -1,7 +1,7 @@
 #EXTM3U
-#EXTINF:-1,500英里 · 线路2 · fengbao13.com
+#EXTINF:-1 tvg-logo="https://zjj3555.github.io/juku-addon/posters/juku-218414.webp",500英里 · 线路2 · fengbao13.com
 https://fengbao13.com/video/500yingli/4789c9f27c79/index.m3u8
-#EXTINF:-1,500英里 · 线路11 · hn.bfvvs.com
+#EXTINF:-1 tvg-logo="https://zjj3555.github.io/juku-addon/posters/juku-218414.webp",500英里 · 线路11 · hn.bfvvs.com
 https://hn.bfvvs.com/play/b68R5RVe/index.m3u8
-#EXTINF:-1,500英里 · 线路12 · v.gsuus.com
+#EXTINF:-1 tvg-logo="https://zjj3555.github.io/juku-addon/posters/juku-218414.webp",500英里 · 线路12 · v.gsuus.com
 https://v.gsuus.com/play/e73L5Lye/index.m3u8
