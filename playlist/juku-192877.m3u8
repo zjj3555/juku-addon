@@ -1,19 +1,19 @@
 #EXTM3U
-#EXTINF:-1,大濛 · 线路2 · v10.baofeng10.com
+#EXTINF:-1 tvg-logo="https://zjj3555.github.io/juku-addon/posters/juku-192877.jpg",大濛 · 线路2 · v10.baofeng10.com
 https://v10.baofeng10.com/video/dameng/0f28c1f789da/index.m3u8
-#EXTINF:-1,大濛 · 线路4 · svip.ryplay14.com
+#EXTINF:-1 tvg-logo="https://zjj3555.github.io/juku-addon/posters/juku-192877.jpg",大濛 · 线路4 · svip.ryplay14.com
 https://svip.ryplay14.com/20260528/16970_d825f09d/index.m3u8
-#EXTINF:-1,大濛 · 线路5 · vip.ffzy-plays.com
+#EXTINF:-1 tvg-logo="https://zjj3555.github.io/juku-addon/posters/juku-192877.jpg",大濛 · 线路5 · vip.ffzy-plays.com
 https://vip.ffzy-plays.com/20260527/54028_92f1eb60/index.m3u8
-#EXTINF:-1,大濛 · 线路6 · bfikuncdn.com
+#EXTINF:-1 tvg-logo="https://zjj3555.github.io/juku-addon/posters/juku-192877.jpg",大濛 · 线路6 · bfikuncdn.com
 https://bfikuncdn.com/20260527/0JhwWRWh/index.m3u8
-#EXTINF:-1,大濛 · 线路7 · v.lzcdn27.com
+#EXTINF:-1 tvg-logo="https://zjj3555.github.io/juku-addon/posters/juku-192877.jpg",大濛 · 线路7 · v.lzcdn27.com
 https://v.lzcdn27.com/20260528/10997_6342cf9c/index.m3u8
-#EXTINF:-1,大濛 · 线路10 · v9.ppqrrs.com
+#EXTINF:-1 tvg-logo="https://zjj3555.github.io/juku-addon/posters/juku-192877.jpg",大濛 · 线路10 · v9.ppqrrs.com
 https://v9.ppqrrs.com/wjv9/202605/27/CBZ1SECgWj86/video/index.m3u8
-#EXTINF:-1,大濛 · 线路37 · play.ly166.com:65
+#EXTINF:-1 tvg-logo="https://zjj3555.github.io/juku-addon/posters/juku-192877.jpg",大濛 · 线路37 · play.ly166.com:65
 https://play.ly166.com:65/videos/20260527/6a169e745cf6b9c74692fb33/38140d/index.m3u8
-#EXTINF:-1,大濛 · 线路38 · play.maoyanplay.top
+#EXTINF:-1 tvg-logo="https://zjj3555.github.io/juku-addon/posters/juku-192877.jpg",大濛 · 线路38 · play.maoyanplay.top
 https://play.maoyanplay.top/20260528/m0qbVCHx/index.m3u8
-#EXTINF:-1,大濛 · 线路40 · svip.xgplay20.com
+#EXTINF:-1 tvg-logo="https://zjj3555.github.io/juku-addon/posters/juku-192877.jpg",大濛 · 线路40 · svip.xgplay20.com
 https://svip.xgplay20.com/2026-05-27/36019_CFt4JCgAJeP2yapfnm/index.m3u8
