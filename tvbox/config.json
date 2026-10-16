@@ -1,0 +1,17 @@
+{
+  "sites": [
+    {
+      "key": "juku",
+      "name": "Juku 剧库",
+      "type": 3,
+      "api": "https://zjj3555.github.io/juku-addon/tvbox/vod.json",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 1
+    }
+  ],
+  "lives": [],
+  "parses": [],
+  "spider": ""
+}
